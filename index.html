@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="scripts/main.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" crossorigin="anonymous"/>
+    <title>City Travel</title>
+  </head>
+  <body>
+    <header>
+      <h1 class="ml3">City travel</h1>
+      <h2 class="timer" id="tm"></h2>
+    </header>
+    <main>
+      <div class="landing-content">
+        <div class="form-inline">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search..." aria-label="Search" size="30" title="Three letter country code" id="searchBar"/>
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit" id="btnClick">Go</button>
+        </div>
+        <ul>
+          <li>
+            <input type="checkbox" name="categories" class="formInput" value="Only weather" onclick="weatherCheckBox()" id="input-1"/>
+            <label for="cat-1">Only weather</label>
+          </li>
+          <li>
+            <input type="checkbox" name="categories" class="formInput" value="Only attractions" onclick="attractionsCheckBox()" id="input-2"/>
+            <label for="cat-2">Only attractions</label>
+          </li>
+        </ul>
+      </div>
+      <div class="container-disp">
+        <main class="row-disp" id="dis">
+          <div class="title-city-name" id="cityN"></div>
+          <div class="co-card1-bg" id="card-1">
+            <h5 class="title-W">Current Weather</h5>
+            <div class="co-card1">
+              <div class="app-title">
+                <h6 class="showDay" id="showDay"></h6>
+                <h6 class="showDate" id="showDate"></h6>
+              </div>
+              <div class="weather-container">
+                <div class="weather-icon">
+                  <img
+                    src="img/icons/unknown.png"
+                    alt="icon"
+                    height="70px"
+                    width="70px"
+                  />
+                </div>
+                <div class="temperature-value">
+                  <p>- °<span>C</span></p>
+                </div>
+                <div class="temperature-description">
+                  <p>-</p>
+                </div>
+                <div class="location">
+                  <p>-</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="co-card2-bg" id="card-2">
+            <h5 class="title-A">Top Attractions</h5>
+            <div id="card-3"></div>
+          </div>
+        </main>
+      </div>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" crossorigin="anonymous"></script>
+  </body>
+</html>

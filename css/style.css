@@ -1,0 +1,235 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+  font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  background-image: url("../img/airplane.jpg");
+}
+
+header {
+  display: block;
+  margin-top: 0;
+  width: 100%;
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  border: 1px solid #329c62;
+  position: relative;
+  z-index: 1;
+  background: inherit;
+  overflow: hidden;
+  height: auto;
+}
+
+.ml3 {
+  height: auto;
+  width: auto;
+  font-weight: 900;
+  font-size: 3.5em;
+  text-align: center;
+  color: aliceblue;
+  -moz-text-shadow: 13px 13px 32px #000000;
+  text-shadow: 13px 13px 32px #000000;
+  text-transform: uppercase;
+  font-style: italic;
+}
+
+.timer {
+  text-align: center;
+  -moz-text-shadow: 13px 13px 32px #000000;
+  text-shadow: 13px 13px 32px #000000;
+  color: white;
+  width: auto;
+  height: auto;
+  font-size: 2em;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.btn {
+  width: 100px;
+}
+.form-inline {
+  float: left;
+  margin-top: 20px;
+}
+
+.landing-content {
+  -moz-box-shadow: 13px 13px 32px #000000;
+  box-shadow: 13px 13px 32px #000000;
+  color: #ffffff;
+  display: flow-root;
+  height: auto;
+  padding: 15px;
+  margin-top: 25px;
+  border: 1px solid #329c62;
+  border-radius: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: auto;
+  width: 80%;
+}
+
+.landing-content ul {
+  float: right;
+  padding: 10px;
+}
+
+.container-disp {
+  display: flex;
+  box-shadow: 13px 13px 32px #000000;
+  height: auto;
+  border: 1px solid #329c62;
+  margin-top: 20px;
+  border-radius: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+
+.row-disp {
+  height: 100%;
+  padding: 10px;
+  width: 100%;
+  margin: auto;
+}
+
+.title-city-name {
+  text-align: left;
+  font: 2em large;
+  margin-top: 10px;
+  margin-left: 10px;
+  height: auto;
+  width: 100%;
+}
+
+.title-A {
+  color: white;
+  margin-top: 10px;
+  margin-left: 30px;
+  text-align: left;
+  font: 1rem;
+}
+.title-W {
+  text-align: center;
+  font: 1rem;
+  color: white;
+}
+
+.co-card1-bg {
+  width: 100%;
+  display: none;
+}
+
+.co-card1 {
+  background: linear-gradient(to bottom, #33ccff 0%, #ff99ff 100%);
+  width: 250px;
+  height: 240px;
+  border-radius: 10px;
+  margin: auto;
+  border: 2px solid #e7e7e7;
+}
+
+.app-title {
+  width: auto;
+  height: auto;
+  border-radius: 10px 10px 0 0;
+  margin-top: 10px;
+}
+
+.app-title p {
+  text-align: center;
+  padding: 2px;
+  margin: 0 auto;
+  font-size: 1em;
+  color: #000000;
+}
+
+.app-title h6 {
+  text-align: center;
+  margin: 0 auto;
+  padding: 2px;
+  margin: 0 auto;
+  font-size: 1em;
+  color: #ffffff;
+}
+
+.weather-container {
+  width: 243px;
+  height: 170px;
+  margin-left: 1px;
+}
+
+.weather-icon {
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 70px;
+}
+
+.weather-icon img {
+  display: block;
+  margin: 0 auto;
+}
+
+.temperature-value {
+  width: auto;
+  height: auto;
+}
+
+.temperature-value p {
+  padding: 0;
+  margin: 0;
+  color: #ffffff;
+  font-size: 1.8em;
+  text-align: center;
+  cursor: pointer;
+}
+
+.location p {
+  text-align: center;
+  font-size: larger;
+  color: #ffffff;
+}
+.temperature-description p {
+  padding: 1px;
+  margin: 0;
+  color: #ffffff;
+  text-align: center;
+  font-size: 1.2em;
+}
+
+.co-card2-bg {
+  width: 100%;
+  height: auto;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-left: auto;
+  display: none;
+}
+.co-card2 {
+  float: left;
+  background: linear-gradient(to bottom, #329c62 0%, #66ffff 100%);
+  width: 250px;
+  height: 210px;
+  border-radius: 10px;
+  margin: 25px;
+  border: 2px solid #e7e7e7;
+}
+
+.co-card2 h6 {
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.co-card2 p {
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
