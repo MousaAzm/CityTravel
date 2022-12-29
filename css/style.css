@@ -6,10 +6,14 @@
 
 body {
   overflow-x: hidden;
-  font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI",
-    Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
-    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  background-image: url("../img/airplane.jpg");
+  font-family: 'Roboto Slab', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji',
+    'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+    background-image: url('../img/airplane.jpg');
+    width: 100%;
+    height: 100vh;
+    max-height: 100%;
+    background-size: cover;
 }
 
 header {
@@ -17,13 +21,17 @@ header {
   margin-top: 0;
   width: 100%;
   box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
-  border-radius: 10px;
-  border: 1px solid #329c62;
+  border-bottom: 1px solid #329c62;
   position: relative;
   z-index: 1;
   background: inherit;
   overflow: hidden;
   height: auto;
+}
+
+.content {
+  padding-top: 15px;
+  padding-bottom: 20px;
 }
 
 .ml3 {

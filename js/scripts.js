@@ -19,7 +19,8 @@ window.onload = function () {
 
   // Search click 
   searchButton.addEventListener("click", function () {
-    if(searchCity.value.match(letters)) {
+
+    if(searchCity.value.toLowerCase().match(letters)) {
         getWeatherInfo();
     } else {
         alert( "Check your city name.");
@@ -29,7 +30,7 @@ window.onload = function () {
   
   //  Weather
   function getWeatherInfo() {
-    fetch(`http://api.openweathermap.org/data/2.5/weather?q=${searchCity.value}&units=metric&APPID=7084c9feecad4a0e88495a33c655f226`)
+    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${searchCity.value}&units=metric&APPID=7084c9feecad4a0e88495a33c655f226`)
       .then((response) => {
         if (response.ok) {
           return response.json();

@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css" />
-    <script src="js/scripts.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" crossorigin="anonymous"/>
     <title>City Travel</title>
   </head>
@@ -13,13 +13,13 @@
       <h1 class="ml3">City travel</h1>
       <h2 class="timer" id="tm"></h2>
     </header>
-    <main>
+    <div class="content" >
       <div class="landing-content">
         <div class="form-inline">
           <input class="form-control mr-sm-2" type="search" placeholder="Search..." aria-label="Search" size="30" title="Three letter country code" id="searchBar"/>
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit" id="btnClick">Go</button>
+          <button class="btn btn-success my-2 my-sm-0" type="submit" id="btnClick">Search</button>
         </div>
-        <ul>
+        <ul class="list-inline">
           <li>
             <input type="checkbox" name="categories" class="formInput" value="Only weather" onclick="weatherCheckBox()" id="input-1"/>
             <label for="cat-1">Only weather</label>
@@ -67,7 +67,8 @@
           </div>
         </main>
       </div>
-    </main>
+    </div>
+    <script src="js/scripts.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" crossorigin="anonymous"></script>
